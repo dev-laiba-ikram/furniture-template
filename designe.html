@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 40px;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+        margin-bottom: 50px;
+      }
+    
+      h1 {
+        margin-top: 160px;
+      }
+      .grid-col-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+         gap: 80px;
+      }
+      img {
+        width: 100%;
+      }
+      .format {
+        width: 70%;
+        height: 100%;
+        margin: 0 auto;
+        font-family: sans-serif;
+        
+      }
+      h2 {
+        margin-bottom: 48px;
+      }
+      .feature-title {
+        margin-bottom: 16px;
+      }
+      .font {
+        margin-bottom: 48px;
+      }
+      .customer-box {
+        grid-column: 2/-1;
+        margin-bottom: 24px;
+      }
+      .customer-text {
+        font-style: italic;
+        text-align: left;
+      }
+      .chair-box {
+        text-align: left;
+        list-style: none;
+        margin-bottom: 24px;
+      }
+    .chair-detail{
+      margin-bottom: 24px;
+    }
+    .chair{
+      margin-bottom: 24px;
+      text-align: center;
+      padding: 24px;
+    }
+    .chair-price{
+      display: grid;
+      grid-template-columns:repeat(2,1fr);
+
+    }
+    footer{
+      margin-bottom: 48px;
+    }
+    </style>
+
+  </head>
+  <body>
+    <div class="format">
+      <header class="container">
+        <div class="item">
+          <h1>We design and build better chairs, for a better life</h1>
+          <p>
+            In a small shop in the heart of Lisbon, we spend our days
+            relentlessly perfecting the chair. The result is a perfect blend of
+            beauty and comforts, that will have a lasting impact on your health.
+          </p>
+          <a href="#">Shop here...</a>
+        </div>
+
+        <img src="./img/hero.jpg" alt="photo" />
+      </header>
+      <!-- for scetion-->
+      <section class="font">
+        <h2>What makes our chairs special</h2>
+        <div class="grid-col-3">
+          <div>
+            <strong class="feature-title">Science meets design</strong>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+              similique adipisci praesentium.
+
+
+            </p>
+          </div>
+          <div >
+            <strong class="feature-title">Maximal comfort</strong>
+            <p>
+              Reprehenderit optio placeat quasi excepturi architecto, explicabo
+              facilis perspiciatis error maxime magnam.
+            </p>
+          </div>
+          <div>
+            <strong class="feature-title">Ethical and sustainable</strong>
+            <p>
+              Deleniti recusandae quidem nesciunt, eos dolorum iure, quaerat
+              omnis est laudantium voluptatem voluptas! People sitting on chairs
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Customer section -->
+      <section class="font">
+        <div class="grid-col-3">
+          <img
+            src="./img/customers.jpg"
+            alt="photo"
+          />
+          <div class="customer-box">
+            <h2 class="customer-box h2">
+              "We couldn't live without these chairs anymore"
+            </h2>
+            <blockquote class="customer-text">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              repellat at, nesciunt quia cum minima ipsum culpa totam sapiente
+              recusandae earum debitis doloribus in quasi voluptatibus!"
+            </blockquote>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION -->
+      <section>
+        <h2>Our bestselling chairs</h2>
+        <div class="grid-col-3">
+          <div >
+            <img
+              class="feature-title"
+              src="./img/chair-1.jpg"
+              alt=" chair photo"
+            />
+            <div class="chair" >
+              <h3>The Laid Back</h3>
+              <ul class="chair-box">
+                <li class="chair-detail">Leisure and relaxing</li>
+                <li class="chair-detail">Comfortable for 4h</li>
+                <li class="chair-detail">Vegan leather</li>
+                <li class="chair-detail">Weighs 16 kg</li>
+              </ul>
+              <div class="chair-price"> 
+                <strong>250</strong>
+                <a href="#">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div >
+            <img
+              class="feature-title"
+              src="./img/chair-2.jpg"
+              alt=" chair photo"
+            />
+            <div class="chair" >
+              <h3>The Worker Bee</h3>
+              <ul class="chair-box">
+                <li class="chair-detail">Work</li>
+                <li class="chair-detail"><span>Comfortable for 4h</li></span>
+                <li class="chair-detail">Vegan leather</li>
+                <li class="chair-detail">Weighs 22 kg</li>
+              </ul>
+              <div class="chair-price"> 
+                <strong>525</strong>
+                <a href="#">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="feature-title"
+              src="./img/chair-3.jpg"
+              alt=" chair photo"
+            />
+            <div class="chair">
+              <h3>The Chair 4/2</h3>
+              <ul class="chair-box">
+                <li class="chair-detail">Leisure and relaxing</li>
+                <li class="chair-detail">Comfortable all day!</li>
+                <li class="chair-detail">Organic cotton</li>
+                <li class="chair-detail">Weighs 80 kg</li>
+              </ul>
+              <div class="chair-price"> 
+                <strong>1450</strong>
+                <a href="#">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- price -->
+        
+      </section>
+      <footer>
+        Copyright © 2027 by Jonas Schmedtmann. Part of "Build Responsive Real-World Websites with HTML and CSS" online course. Use for learning purposes only.
+      </footer>
+    </div>
+  </body>
+</html>
